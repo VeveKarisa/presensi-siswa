@@ -9,11 +9,9 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed w-full bg-white shadow-md z-[99999]">
+    <nav className="fixed w-full bg-[#1B438F] shadow-md z-[99999]">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="/" className="flex items-center">
-          <p className="font-black">Welcome</p>
-        </a>
+          <p className="uppercase font-medium text-white text-xl">Presensi Siswa</p>
         <button
           onClick={toggleMenu}
           className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
@@ -38,31 +36,11 @@ const Navbar = () => {
           </svg>
         </button>
         <div className="hidden w-full md:block md:w-auto">
-          <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
-          <li>
-              <p selector="#home" className="block py-2 px-3 cursor-pointer">
-                Home
-              </p>
-            </li>
+          <ul className=" flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
             <li>
-              <p selector="#about" className="block py-2 px-3 cursor-pointer">
-                  About
-              </p>
-            </li>
-            <li>
-              <p selector="#experience" className="block py-2 px-3 cursor-pointer">
-                  Experience
-              </p>
-            </li>
-            <li>
-              <Link to="/portfolio" className="block py-2 px-3">
-                Portfolio
-              </Link>
-            </li>
-            <li>
-              <Link to="/contact" className="block py-2 px-3">
-                Contact
-              </Link>
+              <button selector="#home" className="block py-2 px-3 cursor-pointer text-blue-600 text-sm font-medium">
+                LOGOUT
+              </button>
             </li>
           </ul>
         </div>

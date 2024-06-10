@@ -23,35 +23,35 @@ const Modal = ({ isOpen, onClose }) => {
                     <div className='bg-white shadow-md rounded-md border p-4'>
                         <div class="mb-2">
                             <label for="nisn" class="mb-2 text-md font-medium text-gray-900s hidden">NISN</label>
-                            <input type="nisn" id="nisn" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-md rounded-lg block w-full p-2" placeholder="NISN" required />
+                            <input type="nisn" id="nisn" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2" placeholder="NISN" required />
                         </div>
                         <div class="mb-2">
-                            <label for="nama" class="mb-2 text-md font-medium text-gray-900s hidden">Nama</label>
-                            <input type="nama" id="nama" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-md rounded-lg block w-full p-2" placeholder="Nama" required />
+                            <label for="nama" class="mb-2 text-sm font-medium text-gray-900s hidden">Nama</label>
+                            <input type="nama" id="nama" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2" placeholder="Nama" required />
                         </div>
                         <div class="mb-2">
-                            <label for="email" class="mb-2 text-md font-medium text-gray-900s hidden">Email</label>
-                            <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-md rounded-lg block w-full p-2" placeholder="Email" required />
+                            <label for="email" class="mb-2 text-sm font-medium text-gray-900s hidden">Email</label>
+                            <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2" placeholder="Email" required />
                         </div>
                         <div class="mb-2">
-                            <label for="telepon" class="mb-2 text-md font-medium text-gray-900s hidden">No Telp</label>
-                            <input type="telepon" id="telepon" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-md rounded-lg block w-full p-2" placeholder="No Telp" required />
+                            <label for="telepon" class="mb-2 text-sm font-medium text-gray-900s hidden">No Telp</label>
+                            <input type="telepon" id="telepon" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2" placeholder="No Telp" required />
                         </div>
                         <div class="mb-2">
-                            <label for="guru" class="mb-2 text-md font-medium text-gray-900s hidden">Guru</label>
-                            <select id="guru" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-md rounded-lg block w-full p-2"required>
+                            <label for="guru" class="mb-2 text-sm font-medium text-gray-900s hidden">Kelamin</label>
+                            <select id="guru" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2"required>
                             <option selected>Kelamin (L/P)</option>
                             <option value="laki">Laki-Laki</option>
                             <option value="laki">Perempuan</option>
                             </select>
                         </div>
                         <div class="mb-2">
-                            <label for="guru" class="mb-2 text-md font-medium text-gray-900s hidden">Guru</label>
-                            <input type="guru" id="guru" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-md rounded-lg block w-full p-2" placeholder="Guru" required />
+                            <label for="ortu" class="mb-2 text-sm font-medium text-gray-900s hidden">Nama Orang Tua</label>
+                            <input type="ortu" id="ortu" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2" placeholder="Nama Orang Tua" required />
                         </div>
                         <div class="mb-2">
-                            <label for="kelas" class="mb-2 text-md font-medium text-gray-900s hidden">Kelas</label>
-                            <input type="kelas" id="kelas" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-md rounded-lg block w-full p-2" placeholder="Kelas" required />
+                            <label for="kelas" class="mb-2 text-sm font-medium text-gray-900s hidden">Kelas</label>
+                            <input type="kelas" id="kelas" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-full p-2" placeholder="Kelas" required />
                         </div>
                     </div>
                     <hr />  
@@ -118,28 +118,28 @@ const DataSiswa = () => {
           <table className="w-full text-sm text-left rtl:text-right">
             <thead className="text-xs text-white uppercase bg-[#1D48A6]">
               <tr>
-                <th scope="col" className="px-6 py-3">No</th>
-                <th scope="col" className="px-6 py-3">NISN</th>
-                <th scope="col" className="px-6 py-3">Nama</th>
-                <th scope="col" className="px-6 py-3">Email</th>
-                <th scope="col" className="px-6 py-3">No Telp</th>
-                <th scope="col" className="px-6 py-3">Kelamin (L/P)</th>
-                <th scope="col" className="px-6 py-3">Guru</th>
-                <th scope="col" className="px-6 py-3">Kelas</th>
-                <th scope="col" className="px-6 py-3">Aksi</th>
+                <th scope="col" className="px-6 py-3 text-nowrap">No</th>
+                <th scope="col" className="px-6 py-3 text-nowrap">NISN</th>
+                <th scope="col" className="px-6 py-3 text-nowrap">Nama</th>
+                <th scope="col" className="px-6 py-3 text-nowrap">Email</th>
+                <th scope="col" className="px-6 py-3 text-nowrap">No Telp</th>
+                <th scope="col" className="px-6 py-3 text-nowrap">Kelamin (L/P)</th>
+                <th scope="col" className="px-6 py-3 text-nowrap">Nama Orang Tua</th>
+                <th scope="col" className="px-6 py-3 text-nowrap">Kelas</th>
+                <th scope="col" className="px-6 py-3 text-nowrap">Aksi</th>
               </tr>
             </thead>
             <tbody>
               <tr className="bg-white border border-gray-300">
                 <th scope="row" className="px-6 py-4 font-medium text-black whitespace-nowrap">1</th>
-                <td className="px-6 py-4">12345678</td>
-                <td className="px-6 py-4">Berliana gamink batam</td>
-                <td className="px-6 py-4">Berliana@gmail.com</td>
-                <td className="px-6 py-4">0899477160</td>
-                <td className="px-6 py-4">P</td>
-                <td className="px-6 py-4">Ayu Rahayu S.pd</td>
-                <td className="px-6 py-4">4 A</td>
-                <td className="px-6 py-4 flex gap-7">
+                <td className="px-6 py-4 text-nowrap">12345678</td>
+                <td className="px-6 py-4 text-nowrap">Berliana gamink batam</td>
+                <td className="px-6 py-4 text-nowrap">Berliana@gmail.com</td>
+                <td className="px-6 py-4 text-nowrap">0899477160</td>
+                <td className="px-6 py-4 text-nowrap">P</td>
+                <td className="px-6 py-4 text-nowrap">Titi Dj</td>
+                <td className="px-6 py-4 text-nowrap">4 A</td>
+                <td className="px-6 py-4 text-nowrap flex gap-7">
                   <a href="#" className="font-medium text-blue-600 dark:text-blue-500 hover:underline">
                     <svg height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M3.4375 13.0625L17.1875 1.1875L20.625 4.15625L6.875 16.0312M3.4375 13.0625L2.0625 17.2188L6.875 16.0312M3.4375 13.0625L6.875 16.0312M14.4375 3.5625L17.875 6.53125" stroke="black" strokeLinecap="round" strokeLinejoin="round" />

@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom"
 // ini bagian tambah layout
 import Layout from "./templates/Layout"
 import LayoutGuru from "./templates/LayoutGuru"
+import LayoutWali from "./templates/LayoutWali"
 
 import Auth from "./pages/Auth"
 import Register from "./pages/Register"
@@ -19,6 +20,11 @@ import DashboardGuru from "./guru/dashboard"
 import ProfileGuru from "./guru/profile"
 import DataSiswaGuru from "./guru/data_siswa"
 import Absensi from "./guru/absensi"
+
+// bagian wali
+import DashboardWali from "./wali/dashboard"
+import ProfileWali from "./wali/profile"
+import RekapAbsensi from "./wali/rekap_absensi"
 
 
 const App = createBrowserRouter([
@@ -79,6 +85,25 @@ const App = createBrowserRouter([
       {
         path: '/guru/absensi',
         element: <Absensi />
+      },
+    ]
+  },
+
+   // bagian wali
+   {
+    element: <LayoutWali />,
+    children: [
+      {
+        path: '/wali/dashboard',
+        element: <DashboardWali />
+      },
+      {
+        path: '/wali/edit_profile',
+        element: <ProfileWali />
+      },
+      {
+        path: '/wali/rekap_absensi',
+        element: <RekapAbsensi />
       },
     ]
   }

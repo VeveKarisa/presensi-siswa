@@ -49,16 +49,11 @@ const Sidebar = () => {
                                     <li>
                                         <a href="registrasi_user" className="text-base text-gray-900 font-normal rounded-lg hover:bg-gray-100 flex items-center p-2 group ">
                                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <g clip-path="url(#clip0_142_720)">
-                                            <rect width="24" height="24" fill="#FBFBFB"/>
-                                            <path d="M14 12C16.2091 12 18 10.2091 18 8C18 5.79086 16.2091 4 14 4C11.7909 4 10 5.79086 10 8C10 10.2091 11.7909 12 14 12Z" stroke="#6D737A" stroke-width="1.5"/>
-                                            <path d="M21.998 20C22 19.836 22 19.669 22 19.5C22 17.015 18.418 15 14 15C9.582 15 6 17.015 6 19.5C6 21.985 6 24 14 24C16.231 24 17.84 23.843 19 23.563" stroke="#6D737A" stroke-width="1.5" stroke-linecap="round"/>
-                                            </g>
-                                            <defs>
-                                            <clipPath id="clip0_142_720">
-                                            <rect width="24" height="24" fill="white"/>
-                                            </clipPath>
-                                            </defs>
+                                                <g clip-path="url(#clip0_142_720)">
+                                                <rect width="24" height="24" fill="#FBFBFB"/>
+                                                <path d="M14 12C16.2091 12 18 10.2091 18 8C18 5.79086 16.2091 4 14 4C11.7909 4 10 5.79086 10 8C10 10.2091 11.7909 12 14 12Z" stroke="#6D737A" stroke-width="1.5"/>
+                                                <path d="M21.998 20C22 19.836 22 19.669 22 19.5C22 17.015 18.418 15 14 15C9.582 15 6 17.015 6 19.5C6 21.985 6 24 14 24C16.231 24 17.84 23.843 19 23.563" stroke="#6D737A" stroke-width="1.5" stroke-linecap="round"/>
+                                                </g>
                                             </svg>
                                             <span className="ml-3 font-medium text-gray-500"> User</span>
                                         </a>

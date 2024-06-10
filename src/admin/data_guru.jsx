@@ -20,7 +20,11 @@ const Modal = ({ isOpen, onClose }) => {
                 <hr />
                 <div className="mt-2">
                   <form>
-                    <div className='bg-white shadow-md rounded-md border p-7 m-16'>
+                    <div className='bg-white shadow-md rounded-md border p-5 m-7'>
+                        <div class="mb-3">
+                            <label for="nip" class="mb-2 text-md font-medium text-gray-900s hidden">NIP</label>
+                            <input type="nip" id="nip" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-md rounded-lg block w-full p-2.5" placeholder="NIP" required />
+                        </div>
                         <div class="mb-3">
                             <label for="nama" class="mb-2 text-md font-medium text-gray-900s hidden">Nama</label>
                             <input type="nama" id="nama" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-md rounded-lg block w-full p-2.5" placeholder="Nama" required />
@@ -28,6 +32,10 @@ const Modal = ({ isOpen, onClose }) => {
                         <div class="mb-3">
                             <label for="email" class="mb-2 text-md font-medium text-gray-900s hidden">Email</label>
                             <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-md rounded-lg block w-full p-2.5" placeholder="Email" required />
+                        </div>
+                        <div class="mb-3">
+                            <label for="telepon" class="mb-2 text-md font-medium text-gray-900s hidden">No Telp</label>
+                            <input type="telepon" id="telepon" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-md rounded-lg block w-full p-2.5" placeholder="No Telp" required />
                         </div>
                         <div class="mb-3">
                             <label for="kelas" class="mb-2 text-md font-medium text-gray-900s hidden">Kelas</label>
@@ -99,8 +107,10 @@ const DataGuru = () => {
             <thead className="text-xs text-white uppercase bg-[#1D48A6]">
               <tr>
                 <th scope="col" className="px-6 py-3">No</th>
+                <th scope="col" className="px-6 py-3">NIP</th>
                 <th scope="col" className="px-6 py-3">Nama</th>
                 <th scope="col" className="px-6 py-3">Email</th>
+                <th scope="col" className="px-6 py-3">No Telp</th>
                 <th scope="col" className="px-6 py-3">Kelas</th>
                 <th scope="col" className="px-6 py-3">Aksi</th>
               </tr>
@@ -108,9 +118,11 @@ const DataGuru = () => {
             <tbody>
               <tr className="bg-white border border-gray-300">
                 <th scope="row" className="px-6 py-4 font-medium text-black whitespace-nowrap">1</th>
+                <td className="px-6 py-4">123456778</td>
                 <td className="px-6 py-4">Berliana</td>
                 <td className="px-6 py-4">Berliana@gmail.com</td>
-                <td className="px-6 py-4">abcds</td>
+                <td className="px-6 py-4">098773457188</td>
+                <td className="px-6 py-4">4a</td>
                 <td className="px-6 py-4 flex gap-7">
                   <a href="#" className="font-medium text-blue-600 dark:text-blue-500 hover:underline">
                     <svg height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">

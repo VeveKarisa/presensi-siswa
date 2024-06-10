@@ -30,10 +30,6 @@ const Modal = ({ isOpen, onClose }) => {
                           <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-md rounded-lg block w-full p-2.5" placeholder="Email" required />
                       </div>
                       <div class="mb-3">
-                          <label for="username" class="mb-2 text-md font-medium text-gray-900s hidden">Username</label>
-                          <input type="username" id="username" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-md rounded-lg block w-full p-2.5" placeholder="Username" required />
-                      </div>
-                      <div class="mb-3">
                           <label for="password" class="mb-2 text-md font-medium text-gray-900s hidden">Password</label>
                           <input type="password" id="password" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-md rounded-lg block w-full p-2.5" placeholder="Password" required />
                       </div>
@@ -118,7 +114,6 @@ const Regis = () => {
                 <th scope="col" className="px-6 py-3">No</th>
                 <th scope="col" className="px-6 py-3">Nama</th>
                 <th scope="col" className="px-6 py-3">Email</th>
-                <th scope="col" className="px-6 py-3">Username</th>
                 <th scope="col" className="px-6 py-3">Password</th>
                 <th scope="col" className="px-6 py-3">Level</th>
                 <th scope="col" className="px-6 py-3">Aksi</th>
@@ -129,7 +124,6 @@ const Regis = () => {
                 <th scope="row" className="px-6 py-4 font-medium text-black whitespace-nowrap">1</th>
                 <td className="px-6 py-4">Berliana</td>
                 <td className="px-6 py-4">Berliana@gmail.com</td>
-                <td className="px-6 py-4">bebercantik</td>
                 <td className="px-6 py-4">abcds</td>
                 <td className="px-6 py-4">Guru</td>
                 <td className="px-6 py-4 flex gap-7">

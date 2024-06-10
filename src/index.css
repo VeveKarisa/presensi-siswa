@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.hover-close:hover path {
+    fill: #9E9898;
+  }
